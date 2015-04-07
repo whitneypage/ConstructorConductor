@@ -60,14 +60,18 @@ questions.push(q1, q2, q3);
 
 console.log('My users Array and my questions arrray are ...');
 //Now loop console.log your users array and your questions array and verify that they're both holding the right data.
-for (var i = 0; i < questions.length; i++) {
-	for (var key in questions[i]) {
-		console.log(questions[i][key]);
+var data = function(arr) {
+  for (var i = 0; i < arr.length; i++) {
+	for (var key in arr[i]) {
+		console.log(arr[i][key]);
 	}
+  }
 }
+data(questions);
+data(users);
 
-for(var i = 0; i < users.length; i++) {
+/*for(var i = 0; i < users.length; i++) {
 	for(var key in users[i]) {
 		console.log(users[i][key]);
-	}
-}
+	}*/
+
